@@ -1,0 +1,28 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "Modern To-do List",
+  "main": "script.js",
+  "scripts": {
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhatGuy/ToDoApp.git"
+  },
+  "keywords": [
+    "js",
+    "webpack",
+    "todo"
+  ],
+  "author": "Odunsi Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhatGuy/ToDoApp/issues"
+  },
+  "homepage": "https://github.com/dhatGuy/ToDoApp#readme",
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
