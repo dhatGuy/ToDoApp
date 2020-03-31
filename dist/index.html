@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description= "Todo App" content="A todo list App to organize your life activities.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      description="Todo App"
+      content="A todo list App to organize your life activities."
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>MyTODOs</h1>
+    </header>
+    <main>
+      <!-- <aside>
+            <button>Add New</button>
+            <button>All Task</button>
+        </aside> -->
+
+      <div id="projects">
+        <div class="project">
+          <h2 class="title">Title:</h2>
+          <input type="text" id="title" />
+          <p class="description">Description:</p>
+          <input type="text" id="description" />
+          <p class="due-date">Due date:</p>
+          <input type="text" id="dueDate" />
+          <p class="priority">
+            Priority:
+            <select name="" id="priority">
+              <option value="low">Low</option>
+              <option value="high">High</option>
+            </select>
+          </p>
+        </div>
+        <button class="btn">Add</button>
+      </div>
+
+      <div class="list">
+          
+      </div>
+    </main>
+    <script src="./main.js" type="module"></script>
+  </body>
 </html>

@@ -86,14 +86,39 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/class.js":
+/*!**********************!*\
+  !*** ./src/class.js ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Todo; });\nclass Todo{\n    constructor(title, description, dueDate, priority){\n        this._title = title;\n        this._description = description;\n        this._dueDate = dueDate;\n        this._priority = priority\n    }\n}\n\n\n//# sourceURL=webpack:///./src/class.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: myTodos */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log(\"Hello World\")\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"myTodos\", function() { return myTodos; });\n/* harmony import */ var _class__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./class */ \"./src/class.js\");\n/* harmony import */ var _render__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./render */ \"./src/render.js\");\nconsole.clear()\n\n\n\nconst myTodos = [new _class__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('Clean the house', 'Nothing much to do', '2020-04-01', 'High')]\n\n// let todo1 = new Todo('Clean the house', 'Nothing much to do', '2020-04-01', 'High')\n// console.log(todo1)\n\n// document.querySelector('.title').innerHTML = todo1._title\n// document.querySelector('.description').innerHTML = todo1._description\n// document.querySelector('.due-date').innerHTML = todo1._dueDate\n// document.querySelector('.priority').innerHTML = todo1._priority\n\nfunction createTodo(){\n    var title = document.querySelector('#title').value\n    var description = document.querySelector('#description').value\n    var dueDate = document.querySelector('#dueDate').value\n    var priority = document.querySelector('#priority').value\n\n    myTodos.push(new _class__WEBPACK_IMPORTED_MODULE_0__[\"default\"](title, description, dueDate, priority))\n}\n\ndocument.querySelector('.btn').addEventListener('click', function(){\n    createTodo()\n    _render__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n    console.log(myTodos)\n})\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/render.js":
+/*!***********************!*\
+  !*** ./src/render.js ***!
+  \***********************/
+/*! exports provided: render */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ \"./src/index.js\");\n\n\nfunction render(){\n    _index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].forEach(todo=>{\n        document.querySelector('.list').appendChild(\n            `<li>${todo._title}</li>`\n        )\n    })\n    console.log('worked')\n}\n\n\n\n//# sourceURL=webpack:///./src/render.js?");
 
 /***/ })
 

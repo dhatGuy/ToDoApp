@@ -1,63 +1,35 @@
+html,
 body {
-  background-color: lightgrey;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#input {
-  width: 75%;
-  margin: 0 auto;
+header h1 {
   text-align: center;
 }
 
-h1 {
-  color: darkslategray;
-  text-align: center;
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#task {
-  padding: 10px;
-  color: darkslategray;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px;
-  border-radius: 3px;
-  color: darkslategrey;
-  font-weight: 550;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-button#add {
-  background-color: lightseagreen;
-}
-
-button#clear {
-  background-color: #cc1133;
-}
-
-button.remove {
-  padding: 5px;
-  margin-left: 20px;
-  background-color: lightslategrey;
-  opacity: 0.5;
-}
-
-button.remove:hover {
-  background-color: lightseagreen;
-}
-
-ul {
-  width: 75%;
-  margin: 20px auto;
-  text-align: center;
-}
-
-li {
-  list-style-type: none;
-  color: white;
-  font-weight: 600;
-  font-size: 1.3em;
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
